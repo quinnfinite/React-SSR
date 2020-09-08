@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import ReactDom from 'react-dom';
 
-function App() {
+export default function App() {
   const [count, setCount] = useState(0)
   return (
     <>
@@ -12,4 +11,3 @@ function App() {
   )
 }
 
-ReactDom.render(<App/>, document.getElementById('app'))

@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack')
 
 module.exports = {
-  entry: './client/App.jsx',
+  entry: './client/index.js',
   mode: 'development',
   output: {
     filename: 'bundle.js',
