@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "nodemon --exec babel-node server/index.js",
     "build": "webpack -w --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +20,9 @@
   "homepage": "https://github.com/quinnfinite/React-SSR#readme",
   "dependencies": {
     "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/polyfill": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
@@ -27,7 +30,8 @@
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "webpack": "^4.44.1"
+    "webpack": "^4.44.1",
+    "webpack-node-externals": "^2.5.2"
   },
   "devDependencies": {
     "webpack-cli": "^3.3.12"
